@@ -1,0 +1,56 @@
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model; // Safari <= 5
+       -moz-box-sizing: $box-model; // Firefox <= 19
+            box-sizing: $box-model;
+}
+@mixin outline($outline-val) {
+    -webkit-outline: $outline-val; // Safari <= 5
+            outline: $outline-val;
+}
+
+@mixin transition($args...){
+    -webkit-transition: $args;
+     -moz-transition: $args;
+      -ms-transition: $args;
+       -o-transition: $args;
+        transition: $args;
+}
+
+@mixin radius($radius: 0) {
+    @if $radius != 0 {
+        -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+          -ms-border-radius: $radius;
+           -o-border-radius: $radius;
+            border-radius: $radius;
+    }
+}
+
+@mixin square($width, $height, $radius: 0) {
+    
+    width: $width;
+    height: $height;
+  
+    @if $radius != 0 {
+        -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+           -ms-border-radius: $radius;
+            -o-border-radius: $radius;
+              border-radius: $radius;
+    }
+}
+
+@mixin box-shadow($shadow, $inset: false){
+
+    @if $inset{
+        -webkit-box-shadow:inset $shadow;
+         -moz-box-shadow:inset $shadow;
+          box-shadow:inset $shadow
+    }
+    @else{
+        -webkit-box-shadow: $shadow;
+         -moz-box-shadow: $shadow;
+          box-shadow: $shadow
+    }
+    
+} 

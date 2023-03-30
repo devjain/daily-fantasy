@@ -1,0 +1,529 @@
+/*BASIC CSS START*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: #002947;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+}
+
+.base-fonts, a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  -webkit-outline: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  -webkit-outline: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  font-style: normal;
+}
+
+/*BASIC CSS END*/
+/*layout css start*/
+.container {
+  max-width: 100%;
+  padding: 0 5px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.col-5,
+.col-6,
+.col-7,
+.col-12 {
+  padding: 0 5px;
+}
+
+.col-5 {
+  width: 41.666%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+/*layout css end*/
+/*button css start*/
+button, .btn {
+  -webkit-outline: none;
+  outline: none;
+  -webkit-transition: 300ms ease 0s;
+  -moz-transition: 300ms ease 0s;
+  -ms-transition: 300ms ease 0s;
+  -o-transition: 300ms ease 0s;
+  transition: 300ms ease 0s;
+  cursor: pointer;
+}
+
+.btn {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  border: none;
+}
+
+.btn-trans {
+  background: transparent;
+  border: none;
+}
+.btn-trans:hover, .btn-trans:focus {
+  background: transparent;
+}
+
+.btn-secondary {
+  background: #E47C29;
+  width: 158px;
+  height: 40px;
+}
+.btn-secondary:hover {
+  background: #024B5C;
+}
+
+.btn-round {
+  background: #E47C29;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-round:hover {
+  background: #024B5C;
+}
+
+/*button css end*/
+/*tabs css start*/
+.tab-menu ul {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+  border-radius: 34px;
+  padding: 2px;
+}
+.tab-menu ul li {
+  width: 50%;
+}
+.tab-menu ul li a {
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+  border-radius: 34px;
+  height: 38px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-menu ul li a img {
+  margin-right: 5px;
+}
+.tab-menu ul li a.active-a {
+  background: #E47C29;
+}
+
+.tab-container {
+  margin-top: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.tab-container .tab {
+  display: none;
+}
+.tab-container .tab-active {
+  display: block;
+}
+
+/*tabs css end*/
+/*my team css start*/
+.main-heading {
+  margin: 40px 0;
+}
+.main-heading .back-btn {
+  margin-right: 15px;
+}
+.main-heading .time-label {
+  background: #024B5C;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px;
+}
+.main-heading .info-btn {
+  margin-left: 15px;
+}
+
+.country-flag {
+  width: 37px;
+  height: 21px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.country-flag img {
+  width: 100%;
+}
+
+.country-name {
+  text-transform: uppercase;
+}
+
+.country-points, .country-points-dark {
+  background: rgba(255, 255, 255, 0.3);
+  width: 36px;
+  height: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0px 5px;
+  line-height: 16px;
+}
+
+.country-points-dark {
+  background: #000;
+}
+
+.country-secIn {
+  margin-bottom: 15px;
+}
+
+.progress-box {
+  background: #024B5C;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 8px;
+}
+.progress-box h6 {
+  margin-bottom: 10px;
+}
+.progress-box h6 span {
+  vertical-align: text-bottom;
+  font-weight: 400;
+}
+
+.progress, .progress .track {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 4px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.progress .track {
+  background: #00B2DB;
+}
+
+.table-players {
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.player-list-header {
+  background: #E4E4E4;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  border-radius: 45px;
+}
+.player-list-header ul {
+  padding: 8px 10px;
+}
+.player-list-header ul li {
+  width: 30%;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9px;
+  color: #474747;
+}
+.player-list-header ul li:first-child {
+  width: 70%;
+}
+
+.player-list-table {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+
+.player-list-counter {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(95, 95, 95, 0.1);
+}
+.player-list-counter.pointer-lose {
+  background: rgba(2, 75, 92, 0.1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.player-list-row li {
+  width: 30%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5E7484;
+}
+.player-list-row li:first-child {
+  width: 70%;
+}
+.player-list-row li:last-child {
+  color: #002947;
+}
+.player-list-row li:last-child img {
+  vertical-align: middle;
+  float: right;
+}
+.player-list-row li h6 {
+  color: #002947;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.player-list-row li h6 div {
+  color: #5E7484;
+}
+.player-list-row li .player-detail {
+  padding-left: 10px;
+}
+
+.btn-row {
+  margin: 10px 0;
+}
+.btn-row .btn-round {
+  margin-right: 15px;
+}
+
+.pitch {
+  margin-bottom: 15px;
+}
+.pitch img {
+  margin: 0 auto;
+}
+
+.player-pos {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 15px;
+}
+.player-pos .player-sp {
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.pitch-fonts, .player-pos-row .player-name span {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9px;
+}
+
+.player-pos-row {
+  padding-top: 15px;
+}
+.player-pos-row .player-pos-box {
+  padding: 0 5px;
+}
+.player-pos-row .player-pos-box .player-label {
+  position: absolute;
+  bottom: 4px;
+  line-height: 12px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  background: #E47C29;
+}
+.player-pos-row .player-pos-box img {
+  margin: 0 auto;
+}
+.player-pos-row .player-pos-box .player-value {
+  margin: 2px 0;
+}
+.player-pos-row .player-name span {
+  color: #000;
+  width: 60px;
+  height: 17px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 3px;
+  line-height: 17px;
+}
+.player-pos-row .player-name .dark {
+  background: #002947;
+  color: #fff;
+}
+
+.bt-outer {
+  margin-top: 10px;
+}
+
+/*my team css end*/
+
+/*# sourceMappingURL=App.css.map */

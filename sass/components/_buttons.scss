@@ -1,0 +1,46 @@
+/*button css start*/
+button {
+    @include outline(none);
+    @include transition(300ms ease 0s);
+    cursor: pointer;
+}
+.btn {
+    @extend button;
+    @include radius(4px);
+    color: $white-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    border: none;
+    
+}
+.btn-trans{
+    background:transparent;
+    border:none;
+
+    &:hover, &:focus{
+        background:transparent;
+    }
+}
+.btn-secondary{
+    background:$secondary-color;
+    width: 158px;
+    height: 40px;
+
+    &:hover{
+        background:$light-primary-color;
+    }
+}
+
+.btn-round{
+    background:$secondary-color;
+    @include square(40px, 40px, 22px);
+    @include box-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:hover{
+        background:$light-primary-color;
+    }
+    
+}
+/*button css end*/

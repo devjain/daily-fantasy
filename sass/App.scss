@@ -1,0 +1,27 @@
+
+// 1. abstract folder scss files
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// 2. vendors folder scss files
+
+// 3. base folder scss files
+@import 'base/basic';
+
+// 4. layout folder css files 
+@import 'layout/layout';
+@import 'layout/forms';
+
+// 5. components folder scss files 
+@import 'components/buttons';
+@import 'components/tabs';
+
+// 6. pages folders scss files
+@import 'pages/myteam';
+
+// 7. themes folders scss files
+
+
+
+

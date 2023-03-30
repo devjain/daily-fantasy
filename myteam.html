@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Fantasy</title>
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--App custom css file-->
+    <link href="css/App.css" rel="stylesheet" />
+ </head>
+<body>
+
+    <div class="container">
+
+        <!--section 1 start-->
+        <section class="main-heading d-flex align-items-center justify-content-between">
+            <div class="col-6">
+                <h1> <button class="back-btn btn-trans"><img src="images/arrow.png" alt=""></button> My Team</h1>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end ">
+                <div class="time-label inline-block base-fonts">1h 26m Left</div>
+                <button class="info-btn btn-trans"><img src="images/info.png" alt="" /></button>
+            </div>
+        </section>
+        <!--section 1 end-->
+
+        <!--section 2 start-->
+        <section class="country-sec">
+            <div class="country-secIn d-flex align-items-center justify-content-between">
+                <div class="col-6">
+                    <div class="country-detail d-flex align-items-center">
+                        <div class="country-flag"><img src="images/India-Flag.png" alt="India" /></div>
+                        <span class="country-name base-fonts">India</span>
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <div class="country-points inline-block text-center base-fonts">
+                        4
+                    </div>
+                </div>
+            </div>
+            <div class="country-secIn d-flex align-items-center justify-content-between">
+                <div class="col-6">
+                    <div class="country-detail d-flex align-items-center">
+                        <div class="country-flag"><img src="images/Nz-flag.png" alt="New Zealand" /></div>
+                        <span class="country-name base-fonts">New Zealand</span>
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <div class="country-points-dark inline-block text-center base-fonts">
+                        3
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!--section 2 end-->
+
+        <!--section 3 start-->
+        <section class="team-progress-sec">
+            <div class="team-progress-secIn d-flex align-items-center justify-content-between">
+                <div class="col-7 p-0">
+                    <div class="d-flex w-100">
+                        <div class="col-6">
+                            <div class="progress-box w-100">
+                                <h6>45 <span class="base-fonts inline-block ">Credit Left</span></h6>
+                                <div class="progress">
+                                    <div class="track" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="progress-box w-100">
+                                <h6>7/11 <span class="base-fonts inline-block">Players</span></h6>
+                                <div class="progress">
+                                    <div class="track" style="width: 55%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="tab-menu">
+                        <ul class="w-100">
+                           <li><a href="#" class="tab-a active-a" data-id="tab1"><img src="images/list.png" alt="" class="inline-block" /> List</a></li>
+                           <li><a href="#" class="tab-a" data-id="tab2"><img src="images/pitch.png" alt="" class="inline-block" /> Pitch</a></li>
+                        </ul>
+                     </div><!--end of tab-menu-->
+                </div>
+                
+            </div>
+            <div class="tab-container">
+                   
+                <div  class="tab tab-active" data-id="tab1">
+                    <div class="table-players">
+                        <div class="player-list-header">
+                            <ul class="d-flex align-items-center">
+                                <li>Players</li>
+                                <li>Points</li>
+                                <li>Credits</li>
+                            </ul>
+                        </div>
+                        <div class="player-list-table">
+                                
+                                <div class="player-list-counter">
+                                    <ul class="player-list-row d-flex align-items-center">
+                                        <li>
+                                            <div class="d-flex align align-items-center">
+                                                <div><img src="images/blue-tshirt.png" alt="tshirt" /></div>
+                                                <div class="player-detail">
+                                                    <h6>V Kohli <div class="base-fonts text-uppercase">ind</div></h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>325.5</li>
+                                        <li class="d-flex align-items-center justify-content-between"><span>11.5</span> <img src="images/plus.png" alt="" class="inline-block" /></li>
+                                    </ul>
+                                </div>
+                                <div class="player-list-counter pointer-lose">
+                                    <ul class="player-list-row d-flex align-items-center">
+                                        <li>
+                                            <div class="d-flex align align-items-center">
+                                                <div><img src="images/blue-tshirt.png" alt="tshirt" /></div>
+                                                <div class="player-detail">
+                                                    <h6>R Sharma <div class="base-fonts text-uppercase">ind</div></h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>256.5</li>
+                                        <li class="d-flex align-items-center justify-content-between"><span>256.5</span> <img src="images/minus.png" alt="" class="inline-block" /></li>
+                                    </ul>
+                                </div>
+                                <div class="player-list-counter">
+                                    <ul class="player-list-row d-flex align-items-center">
+                                        <li>
+                                            <div class="d-flex align align-items-center">
+                                                <div><img src="images/black-tshirt.png" alt="tshirt" /></div>
+                                                <div class="player-detail">
+                                                    <h6>J Neesham <div class="base-fonts text-uppercase">NZ</div></h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>186.5</li>
+                                        <li class="d-flex align-items-center justify-content-between"><span>10.5</span> <img src="images/plus.png" alt="" class="inline-block" /></li>
+                                    </ul>
+                                </div>
+                                <div class="player-list-counter">
+                                    <ul class="player-list-row d-flex align-items-center">
+                                        <li>
+                                            <div class="d-flex align align-items-center">
+                                                <div><img src="images/black-tshirt.png" alt="tshirt" /></div>
+                                                <div class="player-detail">
+                                                    <h6>K Williamson <div class="base-fonts text-uppercase">NZ</div></h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>386.5</li>
+                                        <li class="d-flex align-items-center justify-content-between"><span>10</span> <img src="images/plus.png" alt="" class="inline-block" /></li>
+                                    </ul>
+                                </div>
+                                <div class="player-list-counter pointer-lose">
+                                    <ul class="player-list-row d-flex align-items-center">
+                                        <li>
+                                            <div class="d-flex align align-items-center">
+                                                <div><img src="images/blue-tshirt.png" alt="tshirt" /></div>
+                                                <div class="player-detail">
+                                                    <h6>M Agarwal <div class="base-fonts text-uppercase">IND</div></h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>226.5</li>
+                                        <li class="d-flex align-items-center justify-content-between"><span>9</span> <img src="images/minus.png" alt="" class="inline-block" /></li>
+                                    </ul>
+                                </div>
+                                <div class="player-list-counter">
+                                    <ul class="player-list-row d-flex align-items-center">
+                                        <li>
+                                            <div class="d-flex align align-items-center">
+                                                <div><img src="images/black-tshirt.png" alt="tshirt" /></div>
+                                                <div class="player-detail">
+                                                    <h6>M Guptill <div class="base-fonts text-uppercase">IND</div></h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>158</li>
+                                        <li class="d-flex align-items-center justify-content-between"><span>8.5</span> <img src="images/plus.png" alt="" class="inline-block" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="btn-row col-12 d-flex align-items-center justify-content-end">
+                        <button class="btn btn-round d-flex align-items-center justify-content-center"><img src="images/filter.png" alt="filter" /></button>
+                        <button class="btn btn-secondary inline-block">Continue</button>
+                    </div>
+                </div><!--end of tab one--> 
+            
+                <div  class="tab " data-id="tab2">
+                    <div class="pitch relative">
+                        <img src="images/ground.png" alt="">
+                        <div class="player-pos absolute text-center">
+                            <div class="w-100 wc-outer">
+                                <p class="player-sp">WICKET KEEPERS</p>
+                                <div class="player-pos-row d-flex align-items-center justify-content-center">
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="wc" />
+                                            <span class="player-label pitch-fonts">c</span>
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">MS Dhoni</span></div>
+                                        <div class="player-value pitch-fonts">11 Cr</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 bt-outer">
+                                <p class="player-sp text-uppercase">Batsmen</p>
+                                <div class="player-pos-row d-flex align-items-center justify-content-center">
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="wc" />
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">R Sharma</span></div>
+                                        <div class="player-value pitch-fonts">10.5 Cr</div>
+                                    </div>
+
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/black-tshirt.png" alt="" />
+                                            <span class="player-label pitch-fonts">vc</span>
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts dark">R Taylor</span></div>
+                                        <div class="player-value pitch-fonts">9 Cr</div>
+                                    </div>
+
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/black-tshirt.png" alt="" />
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts dark">K Williamson</span></div>
+                                        <div class="player-value pitch-fonts">10 Cr</div>
+                                    </div>
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="" />
+                                            
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">M Agarwal</span></div>
+                                        <div class="player-value pitch-fonts">8.5 Cr</div>
+                                    </div>
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="wc" />
+                                            
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">M Agarwal</span></div>
+                                        <div class="player-value pitch-fonts">11 Cr</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-100 bt-outer">
+                                <p class="player-sp text-uppercase">All Rounder</p>
+                                <div class="player-pos-row d-flex align-items-center justify-content-center">
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/black-tshirt.png" alt="" />
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts dark">J Neesham</span></div>
+                                        <div class="player-value pitch-fonts">7.5 Cr</div>
+                                    </div>
+
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="" />
+                                            
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">R Jadeja</span></div>
+                                        <div class="player-value pitch-fonts">7 Cr</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 bt-outer">
+                                <p class="player-sp text-uppercase">Bowler</p>
+                                <div class="player-pos-row d-flex align-items-center justify-content-center">
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/black-tshirt.png" alt="wc" />
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts dark">T Southee</span></div>
+                                        <div class="player-value pitch-fonts">8 Cr</div>
+                                    </div>
+
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="" />
+                                            
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">J Bumrah</span></div>
+                                        <div class="player-value pitch-fonts">10 Cr</div>
+                                    </div>
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/black-tshirt.png" alt="" />
+                                            
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts dark">M Henry</span></div>
+                                        <div class="player-value pitch-fonts">7 Cr</div>
+                                    </div>
+                                    <div class="player-pos-box text-center">
+                                        <div class="relative">
+                                            <img src="images/blue-tshirt.png" alt="" />
+                                            
+                                        </div>
+                                        <div class="player-name"><span class="pitch-fonts">B Kumar</span></div>
+                                        <div class="player-value pitch-fonts">7.5 Cr</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end of tab two--> 
+                   
+            </div><!--end of container-->
+        </section>
+        <!--section 3 end-->
+
+    </div><!--container end-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>

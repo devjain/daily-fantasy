@@ -1,0 +1,225 @@
+/*my team css start*/
+.main-heading{
+
+    margin: 40px 0;
+    
+    .back-btn{
+        margin-right: 15px;
+    }
+
+    .time-label {
+        background:$light-primary-color;
+        @include radius(4px);
+        padding: 10px;
+    }
+    .info-btn{
+        margin-left: 15px;
+    }
+}
+
+.country-flag {
+    @include square(37px, 21px, 2px);
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    margin-right: 15px;
+
+    img{
+        width: 100%;
+    }
+
+}
+.country-name {
+    text-transform: uppercase;
+}
+
+.country-points {
+    background:$light-white-color;
+    @include square(36px, 16px, 2px);
+    padding: 0px 5px;
+    line-height: 16px;
+}
+.country-points-dark{
+    @extend .country-points;
+    background: $black-color;
+}
+.country-secIn{
+    margin-bottom: 15px;
+}
+.progress-box{
+    background:$light-primary-color;
+    @include radius(4px);
+    padding:10px 8px;
+
+    h6{
+        margin-bottom: 10px;
+
+        span{
+            vertical-align: text-bottom;
+            font-weight: 400;
+        }
+    }
+}
+.progress {
+    background: $light-black-color;
+    @include square(100%, 4px, 22px);
+    overflow: hidden;
+
+    .track{
+        @extend .progress;
+        background: $cyan-color;
+    }
+}
+
+.table-players{
+    background: $white-color;
+    @include radius (6px);
+    padding: 5px;
+}
+.player-list-header{
+    background: $gray-color;
+    @include radius(45px);
+
+    ul {
+        padding: 8px 10px;
+
+        li{
+            width: 30%;
+            font-weight: 500;
+            font-size: 8px;
+            line-height: 9px;
+            color:$dark-gray-color;
+
+            &:first-child{
+                width: 70%;
+            }
+        }
+    }
+
+}
+.player-list-table {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+.player-list-counter{
+    padding:8px 10px;
+    border-bottom:1px solid $border-color;
+
+    &.pointer-lose{
+        background:rgba(2, 75, 92, 0.1);
+        @include radius(6px); 
+    }
+    
+}
+.player-list-row{
+    li{
+        width: 30%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $text-gray-color;
+        &:first-child{
+            width: 70%;
+        }
+        &:last-child{
+            color: $primary-color;
+            img{
+                vertical-align: middle;
+                float: right;
+            }
+        }
+        h6{
+            color: $primary-color;
+            line-height: 20px;
+            text-transform: capitalize;
+
+            div{
+                color: $text-gray-color;
+            }
+        }
+        .player-detail{
+            padding-left: 10px;
+        }
+        
+    }
+}
+.btn-row{
+    margin: 10px 0;
+
+    .btn-round{
+        margin-right: 15px;
+    }
+}
+.pitch{
+    margin-bottom: 15px;
+
+    img{
+        margin: 0 auto;
+    }
+}
+.player-pos {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 15px;
+
+    .player-sp {
+        opacity: 0.7;
+        letter-spacing: 1px;
+    }
+}
+.pitch-fonts{
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 9px;
+}
+.player-pos-row {
+    padding-top: 15px;
+
+    .player-pos-box {
+        padding: 0 5px;
+
+        .player-label {
+            position: absolute;
+            bottom: 4px;
+            line-height: 12px;
+            right: 0;
+            @include square(12px, 12px, 30px);
+            background: $secondary-color;
+        }
+
+        img{
+            margin: 0 auto;
+        }
+        .player-value{
+            margin: 2px 0;
+        }
+    }
+    .player-name {
+        span {
+            color: #000;
+            @extend .pitch-fonts;
+            width: 60px;
+            height: 17px;
+            display: inline-block;
+            background: $white-color;
+            border-radius: 3px;
+            line-height: 17px;
+
+            
+        }
+        .dark{
+            background: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+.bt-outer{
+    margin-top: 10px;
+}
+
+
+/*my team css end*/

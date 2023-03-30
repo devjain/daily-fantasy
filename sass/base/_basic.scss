@@ -1,0 +1,62 @@
+/*BASIC CSS START*/
+*{
+    margin:0;
+    padding:0;
+    @include box-sizing(border-box);
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background:$primary-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: $white-color;
+    font-family: 'Archivo', sans-serif;
+}
+.base-fonts{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+}
+a{
+    @extend .base-fonts;
+    text-decoration: none;
+    color: $white-color;
+    
+    &:hover, &:focus{
+        text-decoration: none;
+        @include outline(none);
+    }
+}
+img {
+    display: block;
+    @include outline(none);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $white-color;
+}
+h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+}
+p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    font-style: normal;
+}
+
+
+/*BASIC CSS END*/
